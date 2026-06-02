@@ -1,0 +1,7 @@
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+uv init
+uv venv
+.venv\Scripts\activated
+uv add -r requirements.txt
+uv add ipykernel
